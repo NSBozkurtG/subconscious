@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌀 The Inner Code: Subconscious Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2E86AB, #A23B72);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h3 {
+            color: #2E86AB;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        select, input[type="range"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        select:focus {
+            outline: none;
+            border-color: #2E86AB;
+        }
+        
+        .slider-container {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid #e9ecef;
+            margin-bottom: 20px;
+        }
+        
+        .slider-label {
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 10px;
+        }
+        
+        .slider-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        input[type="range"] {
+            flex: 1;
+            height: 8px;
+            background: #ddd;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #2E86AB;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .slider-value {
+            font-weight: bold;
+            color: #2E86AB;
+            font-size: 1.2em;
+            min-width: 30px;
+            text-align: center;
+        }
+        
+        .reveal-btn {
+            background: linear-gradient(135deg, #2E86AB, #A23B72);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        .reveal-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+        
+        .result {
+            margin-top: 30px;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid;
+            display: none;
+        }
+        
+        .result.core-block {
+            background: #ffebee;
+            border-color: #f44336;
+        }
+        
+        .result.partial-block {
+            background: #fff3e0;
+            border-color: #ff9800;
+        }
+        
+        .result.aligned {
+            background: #e8f5e8;
+            border-color: #4caf50;
+        }
+        
+        .result h4 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .result p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .download-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 1em;
+        }
+        
+        .download-btn:hover {
+            background: #218838;
+        }
+        
+        .score-display {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2E86AB;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌀 The Inner Code: Subconscious Test</h1>
+            <p>Discover the hidden beliefs shaping your reality</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h3>🎯 Choose Your Focus Area</h3>
+                <div class="form-group">
+                    <label for="area">Which area would you like to explore?</label>
+                    <select id="area">
+                        <option value="Money">Money</option>
+                        <option value="Love">Love</option>
+                        <option value="Self-Worth">Self-Worth</option>
+                        <option value="Health">Health</option>
+                        <option value="Spiritual Connection">Spiritual Connection</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>📝 Rate Each Statement (0 = Strongly Disagree, 10 = Strongly Agree)</h3>
+                
+                <div class="slider-container">
+                    <div class="slider-label">1. I feel I deserve good things in life</div>
+                    <div class="slider-wrapper">
+                        <input type="range" id="q1" min="0" max="10" value="5" oninput="updateScore()">
+                        <div class="slider-value" id="q1-value">5</div>
+                    </div>
+                </div>
+                
+                <div class="slider-container">
+                    <div class="slider-label">2. I easily receive support from others</div>
+                    <div class="slider-wrapper">
+                        <input type="range" id="q2" min="0" max="10" value="5" oninput="updateScore()">
+                        <div class="slider-value" id="q2-value">5</div>
+                    </div>
+                </div>
+                
+                <div class="slider-container">
+                    <div class="slider-label">3. I trust life/the divine to guide me</div>
+                    <div class="slider-wrapper">
+                        <input type="range" id="q3" min="0" max="10" value="5" oninput="updateScore()">
+                        <div class="slider-value" id="q3-value">5</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="score-display" id="score-display">
+                Current Score: 5.0/10
+            </div>
+            
+            <button class="reveal-btn" onclick="revealPattern()">
+                🔮 Reveal My Inner Pattern
+            </button>
+            
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+
+    <script>
+        function updateScore() {
+            const q1 = parseInt(document.getElementById('q1').value);
+            const q2 = parseInt(document.getElementById('q2').value);
+            const q3 = parseInt(document.getElementById('q3').value);
+            
+            document.getElementById('q1-value').textContent = q1;
+            document.getElementById('q2-value').textContent = q2;
+            document.getElementById('q3-value').textContent = q3;
+            
+            const score = (q1 + q2 + q3) / 3;
+            document.getElementById('score-display').textContent = `Current Score: ${score.toFixed(1)}/10`;
+        }
+        
+        function revealPattern() {
+            const area = document.getElementById('area').value;
+            const q1 = parseInt(document.getElementById('q1').value);
+            const q2 = parseInt(document.getElementById('q2').value);
+            const q3 = parseInt(document.getElementById('q3').value);
+            const score = (q1 + q2 + q3) / 3;
+            
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+            
+            let resultHTML = '';
+            let resultClass = '';
+            let sessionData = `The Inner Code: Subconscious Test Results\n\nArea Explored: ${area}\nOverall Score: ${score.toFixed(1)}/10\n\nIndividual Responses:\n• I feel I deserve good things: ${q1}/10\n• I easily receive support: ${q2}/10\n• I trust life/the divine to guide me: ${q3}/10\n\nAnalysis:\n`;
+            
+            if (score < 4) {
+                resultClass = 'core-block';
+                resultHTML = `
+                    <h4>🌑 Core Block Detected</h4>
+                    <p><strong>Pattern:</strong> "I am not worthy of receiving"</p>
+                    <p><strong>✨ Belief Rewrite:</strong> "I am a divine being, worthy of infinite good"</p>
+                    <p><strong>💬 Daily Affirmation:</strong> "I now receive with ease, grace, and gratitude"</p>
+                `;
+                sessionData += `🌑 Core Block: 'I am not worthy of receiving'\n✨ Belief Rewrite: 'I am a divine being, worthy of infinite good'\n💬 Affirmation: 'I now receive with ease, grace, and gratitude'`;
+            } else if (score < 7) {
+                resultClass = 'partial-block';
+                resultHTML = `
+                    <h4>🌕 Partial Block Detected</h4>
+                    <p><strong>Pattern:</strong> You sometimes resist receiving. You're learning to trust.</p>
+                    <p><strong>✨ Belief Rewrite:</strong> "I am open to guidance and support in all forms"</p>
+                    <p><strong>💡 Focus:</strong> Practice accepting compliments and help from others</p>
+                `;
+                sessionData += `🌕 Partial Block: Learning to trust and receive\n✨ Belief Rewrite: 'I am open to guidance and support in all forms'`;
+            } else {
+                resultClass = 'aligned';
+                resultHTML = `
+                    <h4>🌟 Beautifully Aligned!</h4>
+                    <p><strong>Pattern:</strong> Your beliefs are supporting abundance and flow</p>
+                    <p><strong>✨ Keep doing:</strong> Trust your intuition and stay open to receiving</p>
+                    <p><strong>🎯 Next level:</strong> Share your positive energy with others</p>
+                `;
+                sessionData += `🌟 Aligned: Your beliefs are supporting abundance!`;
+            }
+            
+            resultHTML += `<button class="download-btn" onclick="downloadResults('${sessionData.replace(/'/g, "\\'")}', '${area}', ${score.toFixed(1)})">📄 Download My Session Results</button>`;
+            
+            resultDiv.className = `result ${resultClass}`;
+            resultDiv.innerHTML = resultHTML;
+            
+            // Scroll to result
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function downloadResults(sessionData, area, score) {
+            const blob = new Blob([sessionData], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `InnerCode_${area}_${score}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
